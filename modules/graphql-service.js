@@ -1,5 +1,5 @@
 const config = {
-    TOKEN: "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",
+    TOKEN: "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",
 };
 
 const baseUrl = "https://api.github.com/graphql";
