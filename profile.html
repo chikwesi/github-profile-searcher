@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Github Page</title>
+  </head>
+
+  <body>
+    <header class="nav-container">
+      <nav class="navbar">
+        <!--git-logo-->
+        <div class="navbar-logo">
+          <a href="/">
+            <img
+              src="assets\Octicons-mark-github.svg"
+              alt="Octicons-github.svg"
+              width="80%"
+              height="70%"
+            />
+          </a>
+        </div>
+        <!-- Hamburger -->
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="burger-menu">
+          <span
+            class="iconify"
+            data-icon="octicon:three-bars-16"
+            data-inline="false"
+          ></span>
+        </label>
+
+        <!--Search-->
+        <div class="search">
+          <form action="" method="GET">
+            <input type="text" class="" placeholder="Search or jump to..." />
+          </form>
+          <img
+            src="https://github.githubassets.com/images/search-key-slash.svg"
+            alt="search icon"
+          />
+        </div>
+
+        <div class="mobile-search">
+          <form action="" method="GET">
+            <input type="text" class="" placeholder="Search or jump to..." />
+          </form>
+          <img
+            src="https://github.githubassets.com/images/search-key-slash.svg"
+            alt="search icon"
+          />
+        </div>
+
+        <!--Navigation Items-->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pull requests</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Issues</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Codespaces</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Marketplace</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+        </ul>
+
+        <div class="options">
+          <!--Notification bell-->
+          <div>
+            <span
+              class="iconify white"
+              data-icon="octicon-bell-16"
+              data-inline="true"
+            ></span>
+          </div>
+          <!--Repo-Dropdown-->
+          <div>
+            <details class="nav-dropdown">
+              <summary>
+                <span
+                  class="iconify white"
+                  data-icon="octicon:plus-16"
+                  data-inline="true"
+                ></span>
+                <span class="nav-dropdown__caret"></span>
+              </summary>
+              <div class="more-dropdown">
+                <a>New repository</a>
+                <a>Import repository</a>
+                <a>New gist</a>
+                <a>New organization</a>
+              </div>
+            </details>
+          </div>
+          <!--Profile-Dropdown-->
+          <div>
+            <details class="nav-dropdown">
+              <summary class="flex-align">
+                <img
+                  class="avatar mr-5"
+                  src="/assets/no-image.png"
+                  alt="profile-image"
+                />
+                <span class="nav-dropdown__caret"></span>
+              </summary>
+              <div class="more-dropdown">
+                <a>Your profile</a>
+                <a>Your repositories</a>
+                <a>Your gists</a>
+                <a>Your organizations</a>
+              </div>
+            </details>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Main Content-->
+    <div class="sub-nav-border">
+      <div class="sub-nav-container">
+        <div class="sub-nav">
+          <a class="sub-nav-link" href="">
+            <span
+              class="iconify sub-nav-icon"
+              data-icon="octicon:book-16"
+              data-inline="true"
+            ></span>
+            Overview
+          </a>
+
+          <a class="sub-nav-link active" href="">
+            <span
+              class="iconify sub-nav-icon"
+              data-icon="octicon:repo-16"
+              data-inline="true"
+            ></span>
+            Repositories
+            <span class="counter repo-count"></span>
+          </a>
+
+          <a class="sub-nav-link" href="">
+            <span
+              class="iconify sub-nav-icon"
+              data-icon="octicon:project-16"
+              data-inline="true"
+            ></span>
+            Projects
+          </a>
+
+          <a class="sub-nav-link" href="">
+            <span
+              class="iconify sub-nav-icon"
+              data-icon="octicon:package-16"
+              data-inline="true"
+            ></span>
+            Packages
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="description">
+        <div class="profile-image-wrapper">
+          <img
+            class="avatar avatar-user"
+            src="/assets/no-image.png"
+            alt="user image"
+          />
+          <div class="smiley">
+            <span
+              class="iconify"
+              data-icon="octicon:smiley-16"
+              data-inline="true"
+            ></span>
+          </div>
+        </div>
+        <div class="profile">
+          <h2></h2>
+          <p class="username"></p>
+          <p></p>
+        </div>
+      </div>
+      <div class="repo-info">
+        <form action="" method="GET">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="  Find a repository..."
+            autocapitalize="false"
+            autocomplete="false"
+          />
+        </form>
+        <p class="repo-search-result">
+          <stong>
+            <span class="repo-count"></span>
+          </stong>
+          results for <strong>public</strong> repositories
+        </p>
+
+        <div class="repo-container">
+          <!--For repo list-->
+        </div>
+      </div>
+    </section>
+    <script type="module" src="./modules/profile-page.js"></script>
+  </body>
+</html>

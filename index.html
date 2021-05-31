@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Adebola's Github Page</title>
+  </head>
+
+  <body class="input-page">
+    <header
+      class="nav-container nav-container--absolute nav-container--transparent"
+    >
+      <nav class="navbar home-nav-bar">
+        <!--git-logo-->
+        <div class="navbar-logo">
+          <img
+            src="assets\Octicons-mark-github.svg"
+            alt="Octicons-github.svg"
+            width="80%"
+            height="70%"
+          />
+        </div>
+        <!-- Hamburger -->
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="burger-menu">
+          <span class="iconify" data-icon="octicon:three-bars-16" data-inline="false"></span>
+        </label>
+        <!--Navigation Items-->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pull requests</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Issues</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Codespaces</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Marketplace</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home-hero-container" class="position-relative">
+      <div class="home-hero-grid">
+        <div class="home-hero position-relative">
+          <h1 class="home-hero__title">Search for Github users</h1>
+          <p class="home-hero__desc">
+            Github is home to millions of developers all around the world
+          </p>
+          <div class="hero-search-grid">
+            <input
+              id="username"
+              class="input-hero-search"
+              placeholder="Enter username"
+              type="search"
+              autocomplete="off"
+            />
+            <button id="submit" class="btn-hero-search">search</button>
+          </div>
+          <div class="search-result-section">
+            <!-- Search Result -->
+            <p class="search-result__count">Search Result</p>
+            <ul id="search-result" class="search-result"></ul>
+          </div>
+        </div>
+        <div class="home-hero__image">
+          <img src="/assets/globe-700.jpeg" />
+        </div>
+      </div>
+    </section>
+
+    <!--Main Content-->
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
