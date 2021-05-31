@@ -419,8 +419,14 @@ h3 {
 }
 
 .repo-meta-section {
-  font-size: 12px;
-  line-height: 18px;
+  display: inline-flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.repo-meta-section > span {
+  display: inline-flex;
+  align-items: center;
 }
 
 /*  TODO: Wrap this in a media query */

@@ -27,7 +27,9 @@ class RepoItemComponent {
         const primaryLanguageGroup = document.createElement('span');
         const languageColor = document.createElement('span')
         const languageText = document.createElement('span')
-        metaDataSection.classList = 'f6 mt-10'
+        const updatedText = document.createElement('span')
+        const updatedTimeText = document.createElement('span')
+        metaDataSection.classList = 'f6 mt-10 repo-meta-section'
         primaryLanguageGroup.classList = "repo-language ml-0 mr-16"
         languageColor.classList = "repo-language-colour"
         if (this.repository.primaryLanguage) {
@@ -39,10 +41,14 @@ class RepoItemComponent {
         }
         metaDataSection.appendChild(this.createIconTextGroup('octicon:star-16', this.repository.stargazerCount))
         metaDataSection.appendChild(this.createIconTextGroup('octicon:repo-forked-16', this.repository.forkCount))
-        metaDataSection.insertAdjacentText("beforeend", ` Updated on ${date.toLocaleString("default", {
+        updatedText.innerText = "Updated on"
+        updatedText.classList = "mr-5"
+        updatedTimeText.innerText=  `${date.toLocaleString("default", {
             month: "short",
             day: "numeric",
-        })}`)
+        })}`
+        metaDataSection.appendChild(updatedText)
+        metaDataSection.appendChild(updatedTimeText)
         return metaDataSection
     }
 
