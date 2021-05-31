@@ -290,6 +290,7 @@ h3 {
 .avatar-user {
   border-radius: 50%;
   box-shadow: 0 0 0 1px #e1e4e8;
+  background-color: #fff;
   height: 100%;
   margin-top: -30px;
   width: 100%;

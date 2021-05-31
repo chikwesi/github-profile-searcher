@@ -46,7 +46,7 @@ export default class ProfilePage {
         let path = window.location.search
         const user = new URLSearchParams(path).get('login')
         if (!user) {
-            return window.location = "/"
+            return window.location = "./"
         }
         try {
             this.data = await fetchGitHubProfile(user);
