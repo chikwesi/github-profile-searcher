@@ -362,15 +362,19 @@ h3 {
   padding-right: 24px;
   margin-bottom: 8px;
   margin-top: 10px;
-  width: 75%;
   line-height: 21px;
   color: #5a5a5a;
+}
+
+.repo-header , .repo-description {
+  word-break: break-word;
 }
 
 .repo-header {
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 
 .repo-header a {
   color: #0366d6;
