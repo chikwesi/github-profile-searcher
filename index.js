@@ -49,14 +49,14 @@ export default class IndexPage {
     results.forEach((result) => {
       const listItem = document.createElement("li")
       const image = document.createElement("img")
-      image.src = result.avatarUrl || '/assets/no-image.png'
+      image.src = result.avatarUrl || './assets/no-image.png'
       listItem.appendChild(image)
       const text = document.createTextNode(result.name ? result.name : result.login)
       listItem.appendChild(text)
       const link = document.createElement("a")
       link.className = 'btn'
       link.textContent = 'view'
-      link.href = `/profile.html?login=${result.login}`
+      link.href = `./profile.html?login=${result.login}`
       listItem.appendChild(link)
       this.list.appendChild(listItem)
     })
