@@ -683,6 +683,9 @@ h3 {
   .repo-search-result {
     width: auto;
   }
+  .home-hero-grid {
+    grid-template-columns: auto;
+  }
   .hero-search-grid {
     grid-template-columns: auto;
     row-gap: 10px;
