@@ -25,13 +25,19 @@ const config = {
         new HtmlWebpackPlugin({
             title: "Github Profile Searcher",
             template: path.resolve(__dirname, "src/index.html"),
-            chunks: ['home']
+            chunks: ['home'],
+            minify: {
+                removeRedundantAttributes: false,
+            }
         }),
         new HtmlWebpackPlugin({
             title: "Github Profile Searcher",
             template: path.resolve(__dirname, "src/pages/profile.html"),
             chunks: ['profile'],
-            filename: 'profile.html'
+            filename: 'profile.html',
+            minify: {
+                removeRedundantAttributes: false,
+            }
         }),
         new CopyPlugin({
             patterns: [
