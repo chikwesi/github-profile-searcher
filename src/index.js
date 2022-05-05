@@ -1,6 +1,7 @@
 
 // import ProfilePage from './modules/profile-page.js'
-import { fetchUsersByUsername } from './modules/graphql-service.js'
+import { fetchUsersByUsername } from './utils/graphql-service.js'
+import './css/styles.css'
 
 export default class IndexPage {
 

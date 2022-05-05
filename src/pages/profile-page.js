@@ -1,5 +1,6 @@
-import RepoItemComponent from './repo-item-component.js'
-import { fetchGitHubProfile } from './graphql-service.js'
+import RepoItemComponent from '../utils/repo-item-component.js'
+import { fetchGitHubProfile } from '../utils/graphql-service.js'
+import '../css/styles.css'
 
 export default class ProfilePage {
 
